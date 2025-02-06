@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Shona ❤️</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            background: url('https://source.unsplash.com/1600x900/?roses,romantic') no-repeat center center/cover;
+            color: white;
+        }
+        h2 { margin-top: 50px; text-shadow: 2px 2px 5px black; }
+        .envelope-container {
+            position: relative;
+            display: inline-block;
+            margin-top: 30px;
+            cursor: pointer;
+        }
+        .letter {
+            display: none;
+            background: rgba(255, 255, 255, 0.9);
+            color: black;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            margin: auto;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Tap the Envelope to Open Your Love Letter 💌</h2>
+    
+    <div class="envelope-container" onclick="openLetter()">
+        <img src="https://i.imgur.com/Uy5INXh.png" alt="Envelope" width="200">
+    </div>
+
+    <div class="letter hidden" id="letter">
+        <h3>My Shona,</h3>
+        <p>Every moment with you is a dream I never want to wake up from. You are the rose that brightens my life, the melody in my heart, and the warmth in my soul. No matter how far we are, my love for you only grows stronger.</p>
+        <p>I cherish you more than words can express, and I can’t wait for the day I hold you in my arms. Until then, let this letter be a reminder of my endless love for you. ❤️</p>
+        <p>Always yours,</p>
+        <p><b>Vaibhav ❤️</b></p>
+    </div>
+
+    <audio id="bgMusic" src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" loop></audio>
+
+    <script>
+        function openLetter() {
+            document.getElementById('letter').classList.remove('hidden');
+            document.getElementById('bgMusic').play();
+        }
+    </script>
+
+</body>
+</html>
